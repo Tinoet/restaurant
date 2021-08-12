@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+*{
+  box-sizing: border-box;
+}
+
+body{
+  
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+header{
+  background-image: url('/restuarant/bg5.jpg');
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+
+}
+.container{
+  width: 1000px;
+  max-width: 100%;
+  padding:  1rem;
+  margin: 0 auto;
+}
+nav{
+  padding: 1rem 0;
+}
+.pre-nav{
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 2rem;
+  align-items: center;
+}
+a{
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.logo{
+  color: #026e78 ;
+  font-weight: bolder;
+  font-size: 2.5rem;
+}
+
+nav ul{
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+nav li{
+  flex: 1 auto;
+}
+
+nav li a{
+  background-color: teal;
+  display: block;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+nav a.active{
+  background-color: white;
+  color: teal;
+  font-weight: bolder;
+}
+
+nav a.highlight{
+  background-color:teal;
+  color: white;
+}
+
+nav a:hover{
+  opacity: 0.8;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+ font-size: 2rem;
+  margin-top: 5rem;
+}
+
+.content h1{
+background-color: teal;
+color: white;
+display: inline-block;
+padding: 1rem;
+font-weight: 200;
+
+}
+
+.white-link{
+background-color: white;
+color: teal;
+padding: 1rem;
+}
+
+.teal-link{
+background-color: teal;
+color: white;
+padding: 1rem;
+margin-top: 2rem
+}
+
+
+@media screen and (max-width:700px) {
+ .pre-nav{
+   flex-direction: column;
+   justify-content: center;
+
+ }
+
+ .content{
+   font-size: 1.5rem;
+ }
+}
+
